@@ -1,6 +1,5 @@
 import React from 'react';
 import { tva } from '@gluestack-ui/nativewind-utils/tva';
-
 import type { VariantProps } from '@gluestack-ui/nativewind-utils';
 import { Text as RNText } from 'react-native';
 

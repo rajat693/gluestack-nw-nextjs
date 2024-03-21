@@ -2,9 +2,10 @@ import { Text, Box, Heading, VStack, Link, LinkText } from "@/components";
 import NextImage from "next/image";
 
 export default function Home() {
+
   return (
     <Box className="h-[100vh] justify-center px-1 bg-background-0">
-      <Box className="items-center" space="lg">
+      <VStack className="items-center" space="lg">
         <NextImage
           src={"/gluestack-ui-logo.png"}
           alt="gluestack-logo"
@@ -20,9 +21,11 @@ export default function Home() {
           and save to reload.
         </Text>
         <Link href="https://ui.gluestack.io/docs/" isExternal>
-          <LinkText className="text-primary-500 text-xl">Learn gluestack-ui</LinkText>
+          <LinkText className="text-primary-500 text-xl">
+            Learn gluestack-ui
+          </LinkText>
         </Link>
-      </Box>
+      </VStack>
     </Box>
   );
 }

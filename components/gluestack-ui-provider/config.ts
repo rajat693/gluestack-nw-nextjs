@@ -1,4 +1,3 @@
-
 import { vars } from 'nativewind';
 
 export const config = {
@@ -297,4 +296,3 @@ export const config = {
     '--color-background-info': '#1A282E',
   }),
 };
-

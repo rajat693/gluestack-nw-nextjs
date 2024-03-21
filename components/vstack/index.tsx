@@ -30,7 +30,7 @@ const VStack = React.forwardRef(
     return (
       <View
         className={vstackStyle({ space, reversed, class: className })}
-        
+        {...props}
         ref={ref}
       />
     );

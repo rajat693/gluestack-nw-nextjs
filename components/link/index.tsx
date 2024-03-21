@@ -1,7 +1,6 @@
 import { createLink } from '@gluestack-ui/link';
 import { Pressable, Platform } from 'react-native';
-import { Text } from 'react-native';
-
+import { Text } from '../text';
 import { tva } from '@gluestack-ui/nativewind-utils/tva';
 import { withStyleContext } from '@gluestack-ui/nativewind-utils/withStyleContext';
 import { withStyleContextAndStates } from '@gluestack-ui/nativewind-utils/withStyleContextAndStates';
@@ -37,7 +36,7 @@ const Link = React.forwardRef(
     return (
       <UILink
         ref={ref}
-        
+        {...props}
         className={linkStyle({ class: className })}
       />
     );
